@@ -1,0 +1,54 @@
+div .outerNav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+  padding: 1vh 0;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(107, 44, 104);
+}
+.menu-button {
+  display: none;
+}
+
+div .innerNav {
+  display: block;
+  flex: 1;
+  text-align: center;
+}
+
+a {
+  padding: 0 0 2px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a:hover {
+  padding: 0;
+  background-color: black;
+  border-bottom: 2px solid white;
+  color: rgb(255, 219, 225);
+}
+
+@media only screen 
+  and (max-device-width: 680px)
+  /* and ( orientation: portrait)  */{
+    .menu-button {
+      display: block;
+    }
+    .top-icon {
+      float: right;
+      margin: 0 3vw;
+    }
+
+    div .outerNav {
+      flex-direction: column;
+      justify-content: center;
+    }
+    div .innerNav {
+      display: none;
+    }
+}
