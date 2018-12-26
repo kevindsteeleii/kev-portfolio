@@ -1,11 +1,10 @@
 .parallax {
-  background-image: url('../img/ian-chen-522675-unsplash.jpg');
+  background-image: url('../img/steven-roe-1045539-unsplash.jpg');
 
-  height: 400px;
+  height: 100vh;
 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* width: 100%; */
 }

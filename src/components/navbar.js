@@ -5,10 +5,10 @@ export default function NavBar() {
   return (
     <div className="outerNav">
       <div className="menu-button"><i className={["fa", "fa-plus", "top-icon"].join(' ')} aria-hidden="true" onClick={handleSwitch}></i></div>
-      <div className="innerNav"><a href="#Home">Home</a></div>
-      <div className="innerNav"><a href="#About">About</a></div>
-      <div className="innerNav"><a href="#Projects">Projects</a></div>
-      <div className="innerNav"><a href="#Contact">Contact</a></div>
+      <div className="innerNav"><a href="#Home">HOME</a></div>
+      <div className="innerNav"><a href="#About">ABOUT</a></div>
+      <div className="innerNav"><a href="#Projects">PROJECTS</a></div>
+      <div className="innerNav"><a href="#Contact">CONTACT</a></div>
     </div>
   );
 }
