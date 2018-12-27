@@ -8,3 +8,32 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.hero-children {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  position: absolute;
+  top: 35%;
+  /* right: 25%; */
+  text-align: center;
+  z-index: 3;
+  color: white;
+  font-size: 4em;
+  text-shadow: 2px 4px #D33D90 ;
+}
+@media only screen 
+  and (max-device-width: 680px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+
+    .hero-text {
+      font-size: 1.5em;
+      text-align: center; 
+      text-shadow: 1.5px 2.5px #D33D90 ;
+    }
+  }

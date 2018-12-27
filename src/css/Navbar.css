@@ -1,26 +1,18 @@
-/* 
-font-family: 'Roboto', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Thasadith', sans-serif;
-*/
-
-div .outerNav {
+div.outerNav {
   position: fixed;
-  width: 100%;
-  height: 5vh;
+  width: 100vw;
   top: 0;
-  bottom: 0;
   padding: 1vh 0;
   display: flex;
   flex-direction: row;
   background-color: #052340;
-  z-index: 3;
+  z-index: 50;
 }
 .menu-button {
   display: none;
 }
 
-div .innerNav {
+div.innerNav {
   display: block;
   flex: 1;
   text-align: center;
@@ -43,21 +35,24 @@ a:hover {
 }
 
 @media only screen 
-  and (max-device-width: 680px)
-  /* and ( orientation: portrait)  */{
-    .menu-button {
-      display: block;
-    }
-    .top-icon {
-      float: right;
-      margin: 0 3vw;
-    }
-
+  and (max-device-width: 680px) {
     div .outerNav {
       flex-direction: column;
       justify-content: center;
     }
-    div .innerNav {
+
+    .menu-button {
+      display: block;
+    }
+    .top-icon {
+      padding: 10px 0;
+      padding-left: 20px;
+      transform-origin: center;
+      transform: scale(1.3);
+      color: white;
+    }
+    
+    div.innerNav {
       display: none;
     }
 }

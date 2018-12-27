@@ -1,3 +1,8 @@
+body,
+html {
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -24,15 +29,4 @@
 
 body {
   background-color: black;
-}
-
-.hero-text {
-  position: absolute;
-  top: 30%;
-  right: 25%;
-  text-align: center;
-  z-index: 3;
-  color: white;
-  font-size: 4em;
-  text-shadow: 2px 4px #D33D90 ;
 }
