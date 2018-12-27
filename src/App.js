@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import AboutMe from "./components/aboutMe";
-import TechCard from "./components/techCard";
+// import TechCard from "./components/techCard";
+import { reactIcon as ReactIcon } from "./components/icons/icons.js"
 import "./css/App.css";
 
 class App extends Component {
@@ -11,7 +12,7 @@ class App extends Component {
       <Navbar/>
       <Hero/>
       <AboutMe/>
-      <TechCard name={"React"} icon={"react.svg"}/>
+      <ReactIcon style={{display: 'inline-block'}} width="10vw"/>
     </>);
   }
 }
