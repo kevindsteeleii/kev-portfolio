@@ -1,9 +1,10 @@
 import React from "react";
+import "../css/SkillShelf.css";
+
 export default function TechCard({ children, name}) {
   return (
-    <div>
+    <div className="tech-card">
       {children}
-      <hr/>
       <p className="skill-name">{name}</p>
     </div>
   );

@@ -1,8 +1,9 @@
+@import url("./index.css");
+
 .parallax {
   background-image: url('../img/steven-roe-1045539-unsplash.jpg');
 
   height: 100vh;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,13 +19,13 @@
 .hero-text {
   position: absolute;
   top: 35%;
-  /* right: 25%; */
   text-align: center;
   z-index: 3;
   color: white;
   font-size: 4em;
-  text-shadow: 2px 4px #D33D90 ;
+  text-shadow: 2px 4px var(--neon-magenta);
 }
+
 @media only screen 
   and (max-device-width: 680px) {
     .parallax {
@@ -34,6 +35,6 @@
     .hero-text {
       font-size: 1.5em;
       text-align: center; 
-      text-shadow: 1.5px 2.5px #D33D90 ;
+      text-shadow: 1.5px 2.5px var(--neon-magenta)
     }
   }

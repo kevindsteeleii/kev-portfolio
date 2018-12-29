@@ -9,7 +9,7 @@ export default class Hero extends Component {
         <div className="hero-children">
           <h1  className="hero-text">{_copy.homeBanner}</h1>
         </div>
-        <div className="parallax"></div>
+        <div className="parallax"/>
       </section>
     );
   }

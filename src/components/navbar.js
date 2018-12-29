@@ -4,17 +4,28 @@ import "../css/Navbar.css";
 export default function NavBar() {
   return (
     <div className="outerNav">
+
       <div className="menu-button">
         <i className={["fa", "fa-plus", "top-icon"].join(" ")} aria-hidden="true" onClick={handleSwitch}></i>
       </div>
 
-        <div className="innerNav"><a href="#Home">HOME</a></div>
-        <div className="innerNav"><a href="#About">ABOUT</a></div>
-        <div className="innerNav"><a href="#Projects">PROJECTS</a></div>
-        <div className="innerNav"><a href="#Contact">CONTACT</a></div>
+        <div className="innerNav"><a onClick={handleLinkClick} href="#Home">HOME</a></div>
+        <div className="innerNav"><a onClick={handleLinkClick} href="#About">ABOUT</a></div>
+        <div className="innerNav"><a onClick={handleLinkClick} href="#Projects">PROJECTS</a></div>
+        <div className="innerNav"><a onClick={handleLinkClick} href="#Contact">CONTACT</a></div>
       
     </div>
   );
+}
+
+const handleLinkClick = evt => {
+  const icon = document.querySelectorAll(".fa")[0];
+  const innerNavs = Array.from(document.getElementsByClassName("innerNav"));
+ 
+  if (icon.classList.contains("fa-minus")) {
+    innerNavs.forEach(nav => {nav.style.display = "none"});
+    icon.classList.replace("fa-minus", "fa-plus");
+  }
 }
 
 const handleSwitch = evt => {

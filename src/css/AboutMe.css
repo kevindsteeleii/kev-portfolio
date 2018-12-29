@@ -1,9 +1,18 @@
-@import url("../css/index.css");
+@import url("./index.css");
+
 section {
   color: white;
 }
 
 #About {
   min-height: 100vh;
-  padding-top: 20px;
+  padding: 10vh 2vw 0;
+
+}
+
+@media only screen 
+and (max-device-width: 680px) {
+  #About {
+    padding: 12vh 4vw 0;
+  }
 }

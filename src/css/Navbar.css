@@ -1,3 +1,5 @@
+@import url("./index.css");
+
 div.outerNav {
   position: fixed;
   width: 100vw;
@@ -5,9 +7,10 @@ div.outerNav {
   padding: 1vh 0;
   display: flex;
   flex-direction: row;
-  background-color: #052340;
+  background-color: var(--dark-blue);
   z-index: 50;
 }
+
 .menu-button {
   display: none;
 }
@@ -22,7 +25,7 @@ a {
   padding: 0 0 2px;
   text-decoration: none;
   font-size: 1.3rem;
-  color: #D33D90;
+  color: var(--neon-magenta);
   font-weight: 800;
   font-family: 'Thasadith', sans-serif;
 }
@@ -44,6 +47,7 @@ a:hover {
     .menu-button {
       display: block;
     }
+
     .top-icon {
       padding: 10px 0;
       padding-left: 20px;

@@ -4,7 +4,7 @@ const MainCopy = {
 }
 
 export const AboutMe = {
-  intro: "Hi, my name is Kevin.",
+  intro: "So who am I?",
 
   story: "I'm a JavaScript Full Stack Web Developer with a Bachelor's in Computer Animation and Interactive Design with 2 years of under grad Computer Science coursework completed. I made a few games for class and my thesis and the coding bug bit and hasn't let go since.",
   
