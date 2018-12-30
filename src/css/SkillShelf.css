@@ -10,11 +10,11 @@
   background-color: var(--dark-blue);
 }
 
-.toggle-shelf > p {
+.toggle-shelf > h3 {
   font-size: 1.2em;
   padding-left:2vw;
 }
-.toggle-shelf > p > span {
+.toggle-shelf > h3 > span {
   margin-right: 2vw;
 }
 

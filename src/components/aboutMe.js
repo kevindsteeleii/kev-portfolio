@@ -4,7 +4,7 @@ import "../css/AboutMe.css";
 
 export default function AboutMe(props) {
   return (
-      <section id="About">
+      <section id="About" className="master-padding">
         <h2>{_about.intro}</h2>
         <p>{_about.story}</p>
           {props.children}

@@ -4,15 +4,15 @@ section {
   color: white;
 }
 
+section > h2 {
+  font-size: 2em;
+}
+
 #About {
   min-height: 100vh;
-  padding: 10vh 2vw 0;
-
 }
 
 @media only screen 
 and (max-device-width: 680px) {
-  #About {
-    padding: 12vh 4vw 0;
-  }
+
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactCard from '../components/cards/reactCard';
+// import ReactCard from '../components/cards/reactCard';
 import '../css/SkillShelf.css';
 
 export default class SkillShelf extends Component {
@@ -40,13 +40,12 @@ export default class SkillShelf extends Component {
     return (
       <>
         <div className="toggle-shelf" onClick={this.handleToggle}>
-          
-          <p><span><i className="fas fa-angle-down"/></span>SKILLS / TECHNOLOGIES</p>
+        
+        <h3><span><i className="fas fa-angle-down"/></span>SKILLS / TECHNOLOGIES</h3>
         </div>
         <div id="skillshelf">
-          { expand && <ReactCard/> }
+          {/* { expand && <ReactCard/> } */}
         </div>
-        { expand && <div className="break-line"/>}
       </>
     );
   }

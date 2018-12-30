@@ -5,9 +5,9 @@ import "../css/Hero.css";
 export default class Hero extends Component {
   render() {
     return (
-      <section  id="Home">
+      <section  id="Home" >
         <div className="hero-children">
-          <h1  className="hero-text">{_copy.homeBanner}</h1>
+          <h1  className="hero-text master-padding">{_copy.homeBanner}</h1>
         </div>
         <div className="parallax"/>
       </section>

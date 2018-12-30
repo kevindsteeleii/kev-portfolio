@@ -9,10 +9,10 @@ export default function NavBar() {
         <i className={["fa", "fa-plus", "top-icon"].join(" ")} aria-hidden="true" onClick={handleSwitch}></i>
       </div>
 
-        <div className="innerNav"><a onClick={handleLinkClick} href="#Home">HOME</a></div>
-        <div className="innerNav"><a onClick={handleLinkClick} href="#About">ABOUT</a></div>
-        <div className="innerNav"><a onClick={handleLinkClick} href="#Projects">PROJECTS</a></div>
-        <div className="innerNav"><a onClick={handleLinkClick} href="#Contact">CONTACT</a></div>
+      <div className="innerNav"><a onClick={handleLinkClick} href="#Home">HOME</a></div>
+      <div className="innerNav"><a onClick={handleLinkClick} href="#About">ABOUT</a></div>
+      <div className="innerNav"><a onClick={handleLinkClick} href="#Projects">PROJECTS</a></div>
+      <div className="innerNav"><a onClick={handleLinkClick} href="#Contact">CONTACT</a></div>
       
     </div>
   );
@@ -20,7 +20,7 @@ export default function NavBar() {
 
 const handleLinkClick = evt => {
   const icon = document.querySelectorAll(".fa")[0];
-  const innerNavs = Array.from(document.getElementsByClassName("innerNav"));
+  const innerNavs = Array.from(evt.currentTarget.parentElement.parentElement.getElementsByClassName('innerNav'));
  
   if (icon.classList.contains("fa-minus")) {
     innerNavs.forEach(nav => {nav.style.display = "none"});

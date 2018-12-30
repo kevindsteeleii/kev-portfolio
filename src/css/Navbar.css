@@ -27,7 +27,7 @@ a {
   font-size: 1.3rem;
   color: var(--neon-magenta);
   font-weight: 800;
-  font-family: 'Thasadith', sans-serif;
+  font-family: var(--hdr-font);
 }
 
 a:hover {

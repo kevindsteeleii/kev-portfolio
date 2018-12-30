@@ -1,16 +1,28 @@
+@import url("./fonts.css");
+
 :root {
   --dark-blue: #052340;
-  --neon-magenta: #D33D90;
+  --lt-blue:  #3482cc;
+  --neon-magenta: #ec46a1;
+  --dark-magenta: #8b1757;
   --lt-grey: #a5ad9d;
-  --drk-grey: #111010;
+  --dark-grey: #111010;
+  --lr-padding: 12vw;
+  --tp-padding: 8vh;
+  --copy-font: 'Merriweather Sans', sans-serif;
+  --hdr-font: 'Rambla', sans-serif;
+}
+
+h1, 
+h2, 
+h3 {
+  font-family: var(--hdr-font);
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: var(--copy-font), var(--hdr-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
 }
@@ -20,8 +32,23 @@ code {
     monospace;
 }
 
+.master-padding {
+  padding: 8vh 12vw;
+}
+
 /* Used to add a bottom "shadow" of lighter color for dark div and div-like elements */
 .dark-shadow-bottom {
   /* border-bottom: 1px solid var(--lt-grey); */
   box-shadow: 0 3px rgba(var(--lt-grey));
+}
+
+@media only screen 
+and (max-device-width: 680px) {
+  :root {
+    --tp-padding: 6vh;
+  }
+  .master-padding {
+    padding:  6vh 12vw 0;
+  }
+  
 }
