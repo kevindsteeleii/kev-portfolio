@@ -2,13 +2,15 @@
 
 div.outerNav {
   position: fixed;
-  width: 100vw;
   top: 0;
+  width: 100vw;
   padding: 1vh 0;
+  z-index: 50;
   display: flex;
   flex-direction: row;
   background-color: var(--dark-blue);
-  z-index: 50;
+  border-bottom: 2px solid var(--lt-aqua);
+  
 }
 
 .menu-button {
@@ -21,20 +23,22 @@ div.innerNav {
   text-align: center;
 }
 
-a {
+.innerNav a {
   padding: 0 0 2px;
   text-decoration: none;
   font-size: 1.3rem;
-  color: var(--neon-magenta);
+  color: var(--dark-magenta);
   font-weight: 800;
   font-family: var(--hdr-font);
 }
 
-a:hover {
+.innerNav a:hover {
   padding: 0;
   background-color: black;
   border-bottom: 2px solid white;
-  color: rgb(255, 219, 225);
+  color: var(--neon-magenta);
+
+  /* color: rgb(255, 219, 225); */
 }
 
 @media only screen 
