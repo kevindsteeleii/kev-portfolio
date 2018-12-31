@@ -1,0 +1,7 @@
+@import url('../css/index.css');
+
+#Projects{
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}

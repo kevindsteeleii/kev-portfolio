@@ -1,0 +1,127 @@
+@import url('./index.css');
+
+#Contact {
+  min-height: 30vh;
+  padding-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--not-black);
+  color: white;
+}
+
+.contact-title {
+  text-decoration: none;
+}
+
+.form-body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.form-inputs > input,
+select.subject,
+textarea.message {
+  background-color: var(--dark-grey);
+  color: white;
+  margin-bottom: 2vh;
+  font-size: 1em;
+}
+
+textarea.message {
+  width: 98%;
+  resize: none;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  margin-right: 1vw;
+}
+
+.form-inputs > input,
+.form-inputs > select {
+  margin-bottom: 1.5vh;
+}
+
+.form-textarea {
+  flex: 6;
+}
+.submit-button {
+  background-color: var(--lt-blue);
+  padding: 1.5vh 1.7vw;
+  border: none;
+  border-radius: .25rem;
+  font-size: 1.3rem;
+}
+
+button.submit-button:disabled {
+  color: lightgray;
+}
+
+button.submit-button:hover {
+  color: white;
+  background-color: var(--dark-blue);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+input > p > label {
+  width: 20vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-button {
+  float: right;
+}
+
+.contact-icons {
+  width: 60vw;
+  display: flex;
+  margin: 2vh auto 3vh;
+  justify-content: space-around;
+  background-color: black;
+}
+
+a.icon-anchor {
+  display: flex;
+}
+
+i.fab {
+  font-size: 3em;
+  color: var(--dark-magenta);
+}
+
+i.fab:hover {
+  color: white;
+  background-color: var(--dark-magenta);
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen 
+and (max-device-width: 680px) {
+  .form-body {
+    width: 70vw;
+    flex-direction: column;
+  }
+  
+  /* .contact-icons {
+    flex-direction: column;
+    justify-content: center;
+  } */
+
+  .contact-icons > a {
+    display: flex;
+    justify-content: space-around;
+    /* width: 100%; */
+  }
+
+  i.fab {
+    font-size: 20vw;
+  }
+}

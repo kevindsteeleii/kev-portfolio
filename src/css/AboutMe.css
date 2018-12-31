@@ -1,15 +1,10 @@
 @import url("./index.css");
 
-section {
-  color: white;
-}
-
-section > h2 {
-  font-size: 2em;
-}
-
 #About {
   min-height: 100vh;
+  padding-bottom: 2vh;
+  color: white;
+  background-color: var(--not-black);
 }
 
 @media only screen 

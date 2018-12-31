@@ -23,6 +23,14 @@
   background-color: var(--dark-grey);
 }
 
+/* .stats-container:hover {
+  box-shadow: 0 0 2px 1px white, 0 0 2px 3px var(--neon-magenta);
+} */
+
+.stats-container:hover .percentage {
+  color: var(--neon-magenta);
+}
+
 .stats-label {
   display: flex;
   flex-direction: column;
@@ -38,7 +46,6 @@
 }
 
 .stats-bar-container {
-  /* width: 80%; */
   flex: 8;
   display: flex;
   justify-content: space-between;
@@ -61,9 +68,9 @@
 
 .percentage {
   color: var(--dark-magenta);
-  /* text-shadow: 1px 2px 1px white; */
   font-family: var(--hdr-font);
   font-size: 1.2em;
+  transition: color .2s ease-in;
 }
 
 .percentage-hover {
@@ -78,6 +85,13 @@ and (max-device-width: 680px) {
   }
   .stats-container {
     width: 100%;
+  }
+  .stats-container:hover {
+    box-shadow: none;
+  }
+  
+  .stats-container:hover .percentage {
+    color: var(--lt-blue);
   }
 
   .stats-label {

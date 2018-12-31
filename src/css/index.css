@@ -3,20 +3,23 @@
 :root {
   --dark-blue: #052340;
   --lt-blue:  #3482cc;
+  --lt-aqua: #44dcf7;
+  -dark-aqua: #25b1ca;
   --neon-magenta: #ec46a1;
   --dark-magenta: #8b1757;
   --lt-grey: #a5ad9d;
+  --blue-grey:#252934;
   --dark-grey: #111010;
+  /* --dark-purple: #252934; */
+  --not-black: #181515;
   --lr-padding: 12vw;
   --tp-padding: 8vh;
   --copy-font: 'Merriweather Sans', sans-serif;
   --hdr-font: 'Rambla', sans-serif;
 }
 
-h1, 
-h2, 
-h3 {
-  font-family: var(--hdr-font);
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,6 +33,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1, 
+h2, 
+h3 {
+  font-family: var(--hdr-font);
+}
+
+section > h2 {
+  font-size: 2em;
 }
 
 .master-padding {
@@ -50,5 +63,4 @@ and (max-device-width: 680px) {
   .master-padding {
     padding:  6vh 12vw 0;
   }
-  
 }

@@ -1,13 +1,13 @@
 @import url("./index.css");
 
 .parallax {
-  background-image: url('../img/steven-roe-1045539-unsplash-min.jpg');
-
+  background-image: url('../img/steven-roe-1045539-unsplash-min-crop.jpg');
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: .4;
 }
 
 .hero-children {
@@ -24,7 +24,9 @@
   z-index: 3;
   color: white;
   font-size: 4em;
-  text-shadow: 2px 4px var(--neon-magenta);
+  text-shadow: 0 0 40px var(--neon-magenta), 
+    1px 1px 10px var(--dark-blue),
+    -1px -1px 10px var(--dark-blue);  
 }
 
 @media only screen 
