@@ -30,11 +30,14 @@
 }
 
 @media only screen 
-  and (max-device-width: 680px) {
+and (max-width: 700px) {
     .parallax {
       background-attachment: scroll;
     }
+  }
 
+  @media only screen 
+  and (max-width: 500px) {
     .hero-text {
       font-size: 1.5em;
       text-align: center; 

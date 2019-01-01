@@ -38,11 +38,10 @@ div.innerNav {
   border-bottom: 2px solid white;
   color: var(--neon-magenta);
 
-  /* color: rgb(255, 219, 225); */
 }
 
 @media only screen 
-  and (max-device-width: 680px) {
+  and (max-width: 700px) {
     div .outerNav {
       flex-direction: column;
       justify-content: center;
