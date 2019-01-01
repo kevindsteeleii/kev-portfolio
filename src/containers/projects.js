@@ -13,7 +13,7 @@ export default function Projects() {
           </div>
         <div className="textbox">
           <h3>Please excuse the appearance</h3>
-          <p> I'm currently retooling the styling and some functionality of my projects however you can find links to the repos <a className="portfolio-link" href="http://github.com/kevindsteeleii">here</a>.</p> 
+          <p> I'm currently retooling the styling and some functionality of my projects however you can find links to the repos <a target="_blank"  rel="noopener noreferrer"  className="portfolio-link" href="http://github.com/kevindsteeleii">here</a>.</p> 
           
         </div>
       </div>
