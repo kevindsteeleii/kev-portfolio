@@ -5,3 +5,69 @@
   background-color: black;
   color: white;
 }
+
+div.project-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+div.gearbox {
+  height: 30vh;
+  flex: 1;
+  position: relative;
+}
+
+div.textbox {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+i.fa-cog {
+  position: absolute;
+  font-size: 6em;
+  animation: gearspinner infinite linear; 
+}
+
+i.gear1 {
+  animation-duration: 2s;
+  top: -6px;
+  left: 9px;
+  color: var(--neon-magenta);
+}
+
+i.gear2 {
+  left: 77px;
+  bottom: 50px;
+  animation-direction: reverse;
+  animation-duration: 2s;
+  color: var(--lt-aqua);
+}
+
+i.gear3 {
+  left: 147px;
+  top: -7px;
+  animation-duration: 4s;
+  color: var(--dark-blue);
+}
+
+a.portfolio-link {
+  font-size: 1.4em;
+}
+
+@keyframes gearspinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen 
+and (max-width: 700px) {
+  div.project-contents{
+    flex-direction: column;
+  }
+}
