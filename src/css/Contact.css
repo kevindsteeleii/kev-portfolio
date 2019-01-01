@@ -77,19 +77,19 @@ input > p > label {
   float: right;
 }
 
-.contact-icons {
+/* .contact-icons {
   width: 60vw;
   display: flex;
   margin: 2vh auto 3vh;
   justify-content: space-around;
   background-color: black;
-}
+} */
 
-a.icon-anchor {
+/* a.icon-anchor {
   display: flex;
-}
+} */
 
-i.fab {
+/* i.fab {
   font-size: 3em;
   color: var(--dark-magenta);
 }
@@ -97,7 +97,7 @@ i.fab {
 i.fab:hover {
   color: white;
   background-color: var(--dark-magenta);
-}
+} */
 
 .hidden {
   display: none;
@@ -110,13 +110,12 @@ and (max-width: 700px) {
     flex-direction: column;
   }
   
-  .contact-icons > a {
+  /* .contact-icons > a {
     display: flex;
     justify-content: space-around;
-    /* width: 100%; */
-  }
+  } */
 
-  i.fab {
+  /* i.fab {
     font-size: 20vw;
-  }
+  } */
 }

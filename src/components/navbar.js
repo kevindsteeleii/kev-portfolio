@@ -12,7 +12,7 @@ export default function NavBar() {
       <div className="innerNav"><a onClick={handleLinkClick} href="#Home">HOME</a></div>
       <div className="innerNav"><a onClick={handleLinkClick} href="#About">ABOUT</a></div>
       <div className="innerNav"><a onClick={handleLinkClick} href="#Projects">PROJECTS</a></div>
-      <div className="innerNav"><a onClick={handleLinkClick} href="#Contact">CONTACT</a></div>
+      {/* <div className="innerNav"><a onClick={handleLinkClick} href="#Contact">CONTACT</a></div> */}
       
     </div>
   );
