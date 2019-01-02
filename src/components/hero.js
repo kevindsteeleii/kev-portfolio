@@ -11,10 +11,10 @@ export default class Hero extends Component {
           
         </div>
         <div className="contact-icons">
-          <a target="_blank"  rel="noopener noreferrer"  className="icon-anchor" href="https://github.com/kevindsteeleii"><i className="fab fa-github-square"/></a>
-          <a target="_blank"  rel="noopener noreferrer" className="icon-anchor" href="https://www.linkedin.com/in/kevindsteeleii/"><i className="fab fa-linkedin"/></a>
-          <a target="_blank"  rel="noopener noreferrer" className="icon-anchor" href="https://medium.com/@kevindsteeleii"><i className="fab fa-medium"/></a>
-          <a target="_blank"  rel="noopener noreferrer" className="icon-anchor" href="https://dev.to/kevindsteeleii"><i className="fab fa-dev"/></a>
+          <a target="_blank" id="github" rel="noopener noreferrer"  className="icon-anchor" href="https://github.com/kevindsteeleii"><i className="fab fa-github-square"/></a>
+          <a target="_blank" id="linkedin" rel="noopener noreferrer" className="icon-anchor" href="https://www.linkedin.com/in/kevindsteeleii/"><i className="fab fa-linkedin"/></a>
+          <a target="_blank" id="medium" rel="noopener noreferrer" className="icon-anchor" href="https://medium.com/@kevindsteeleii"><i className="fab fa-medium"/></a>
+          <a target="_blank" id="dev.to" rel="noopener noreferrer" className="icon-anchor" href="https://dev.to/kevindsteeleii"><i className="fab fa-dev"/></a>
         </div>
         <div className="parallax"/>
       </section>

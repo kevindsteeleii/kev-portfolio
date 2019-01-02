@@ -38,10 +38,49 @@
   margin: -43px auto;
   justify-content: space-between;
 }
-
+/* 
+{"ease":".25,.1,.25,1","linear":"0,0,1,1","ease-in":".42,0,1,1","ease-out":"0,0,.58,1","ease-in-out":".42,0,.58,1"}
+*/
 .icon-anchor {
   color: white;
   font-size: 5em;
+  position: relative;
+  visibility: hidden;
+  transition: transform linear .3s;
+  transition-timing-function: ease-in-out;
+  
+}
+
+.icon-anchor-anim {
+  animation-name: icon-bounce;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.icon-anchor:hover {
+  transform: scale(1.5) /* rotateZ(360deg) */;
+}
+
+/* @keyframes see-saw {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(45deg);
+  }
+} */
+
+
+@keyframes icon-bounce {
+  from {
+    top: 120vh;
+  }
+  to {
+    top: 0px;
+    visibility: visible;
+    display: block;
+  }
 }
 
 @media only screen 
@@ -70,4 +109,7 @@ and (max-width: 700px) {
       margin: -40px auto;
     }
 
+    .icon-anchor:hover {
+      transform: none;
+    }
   }
